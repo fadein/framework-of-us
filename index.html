@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework of Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="house.svg" alt="House Icon" class="logo"/>
+        <h1>Framework of Us</h1>
+        <p class="tagline">Structure that lets love surprise you.</p>
+    </header>
+
+    <section id="setup" class="card">
+        <h2>Setup Partner Info</h2>
+        <label>
+            Partner name
+            <input type="text" id="partnerName" placeholder="Partner Name" />
+        </label>
+        <label>
+            Love language
+            <select id="loveLanguage">
+                <option value="words">Words of Affirmation</option>
+                <option value="time">Quality Time</option>
+                <option value="gifts">Gifts</option>
+                <option value="acts">Acts of Service</option>
+                <option value="touch">Physical Touch</option>
+            </select>
+        </label>
+        <button id="savePartner">Save</button>
+    </section>
+
+    <section id="suggestion" class="card">
+        <h2>Today's Suggestion</h2>
+        <p id="suggestionText">Press the button for a surprise!</p>
+        <button id="getSuggestion">Get Suggestion</button>
+    </section>
+
+    <section id="journal" class="card">
+        <h2>Journal</h2>
+        <textarea id="journalEntry" rows="4" placeholder="How are things going?"></textarea>
+        <button id="saveJournal">Save Entry</button>
+        <ul id="journalList"></ul>
+    </section>
+
+    <section id="connection" class="card">
+        <h2>Connection Tracker</h2>
+        <p>Connection Moments: <span id="connectionCount">0</span></p>
+        <button id="addConnection">Add Moment</button>
+    </section>
+
+    <footer>
+        <p>A love built to last.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
